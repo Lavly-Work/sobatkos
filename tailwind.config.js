@@ -12,6 +12,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 3s linear 1",
       },
+      borderRadius: {
+        "5xl": "200px",
+      },
     },
   },
   plugins: [],

@@ -23,8 +23,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <Header />
-      <main className="pt-20">
-        <section className="flex flex-row w-screen bg-violet-1000">
+      <main className="pt-20 bg-white">
+        <section className="flex flex-col-reverse lg:flex-row w-screen bg-violet-1000">
           <article className="flex flex-col p-20 w-1/2 text-white gap-3">
             <Image src={Logo} className="h-20" alt="logo2" />
             <div className="font-extrabold text-5xl">
@@ -41,10 +41,10 @@ export default function Home() {
               Daftar Sekarang
             </button>
           </article>
-          <article className="w-1/2">
+          <article className="lg:w-1/2">
             <Image
               src={Logo}
-              className="w-full rounded-bl-full rounded-tl-full"
+              className="w-full lg:h-full rounded-br-5xl rounded-bl-5xl lg:rounded-bl-full lg:rounded-tl-full"
               alt="homepage"
             />
           </article>
@@ -324,81 +324,6 @@ export default function Home() {
               </div>
             </div>
           </article>
-        </section>
-        <section className="flex flex-col items-center p-20 gap-10">
-          <div className="font-extrabold text-6xl">Diliput oleh</div>
-          <Image src={Media} alt="media" />
-        </section>
-        <section className="flex flex-row w-screen bg-purple-900">
-          <article className="w-5/12">
-            <Image className="w-full h-full" src={Logo} alt="article" />
-          </article>
-          <article className="flex flex-col w-7/12 text-white p-10 gap-10">
-            <div className="text-5xl">Sobatkost</div>
-            <div className="text-5xl">
-              Mari Bicarakan Solusi untuk Mengembangkan Bisnis Kos Anda
-            </div>
-            <div className="text-xl pr-20">
-              Daftarkan kos Anda di Singgahsini atau Apik, dan Anda juga akan
-              terdaftar ke dalam komunitas pemilik kos Mamikos di seluruh
-              Indonesia.
-            </div>
-            <button className="bg-red-700 p-5 rounded-md text-lg">
-              Daftar Sekarang
-            </button>
-          </article>
-        </section>
-        <section className="flex flex-col px-60 py-20 gap-10">
-          <div className="text-5xl font-extrabold">
-            Tanya Jawab Seputar Sobatkos
-          </div>
-          <div className="flex flex-col gap-1">
-            <button
-              className="flex flex-row justify-between text-2xl text-start"
-              onClick={() => {
-                setShown1(!shown1);
-              }}
-            >
-              <div className="font-extrabold">
-                Apa bedanya Singgahsini dengan MamiRooms?
-              </div>
-              <div>V</div>
-            </button>
-            <p className={`${shown1 ? "" : "hidden"}`}>
-              Singgahsini adalah wajah baru MamiRooms. Layanan yang ditawarkan
-              secara keseluruhan masih sama, hanya ada perubahan pada nama dan
-              logo, serta penambahan produk baru yaitu Apik.
-            </p>
-          </div>
-          <div className="flex flex-col gap-1">
-            <button
-              className="flex flex-row justify-between text-2xl text-start"
-              onClick={() => {
-                setShown2(!shown2);
-              }}
-            >
-              <div className="font-extrabold">
-                Apa bedanya Singgahsini dengan MamiRooms?
-              </div>
-              <div>V</div>
-            </button>
-            <p className={`${shown2 ? "" : "hidden"}`}>
-              Singgahsini adalah wajah baru MamiRooms. Layanan yang ditawarkan
-              secara keseluruhan masih sama, hanya ada perubahan pada nama dan
-              logo, serta penambahan produk baru yaitu Apik.
-            </p>
-          </div>
-        </section>
-        <section className="flex flex-col p-20 items-center text-white bg-rose-800 gap-8">
-          <div className="text-7xl font-extrabold">
-            Ingin tahu lebih lanjut?
-          </div>
-          <div>
-            Download brosur Singgahsini dan Apik atau kunjungi Pusat Bantuan.
-          </div>
-          <button className="bg-white text-black p-4 rounded-xl">
-            Pusat Bantuan &rarr;
-          </button>
         </section>
       </main>
       <Footer />
