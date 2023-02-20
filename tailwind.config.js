@@ -13,6 +13,7 @@ module.exports = {
         "spin-slow": "spin 3s linear 1",
       },
       borderRadius: {
+        "4xl": "125px",
         "5xl": "200px",
       },
     },

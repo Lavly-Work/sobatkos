@@ -25,32 +25,32 @@ export default function Home() {
       <Header />
       <main className="pt-20 bg-white">
         <section className="flex flex-col-reverse lg:flex-row w-screen bg-violet-1000">
-          <article className="flex flex-col p-20 w-1/2 text-white gap-3">
-            <Image src={Logo} className="h-20" alt="logo2" />
-            <div className="font-extrabold text-5xl">
+          <article className="flex flex-col items-center w-screen p-5 lg:p-20 lg:items-start lg:w-1/2 text-white gap-3">
+            <Image src={Logo} className="lg:h-20" alt="logo2" />
+            <div className="text-center lg:text-start font-extrabold text-5xl">
               Sobat Kost, sahabatnya anak kos
             </div>
-            <div className="text-xl">
+            <div className="text-center lg:text-start text-xl">
               Semua yang anda butuhkan sebagai anak kos ada di sini. Kamar
               kosong, antar jemput, bersihkan kamar, semuanya ada
             </div>
-            <div className="text-xl">
+            <div className="text-center lg:text-start text-xl">
               Bahkan jika anda ingin mempromosikan kos, kami bisa membantu
             </div>
             <button className="bg-red-700 p-5 rounded-md text-lg">
               Daftar Sekarang
             </button>
           </article>
-          <article className="lg:w-1/2">
+          <article className="items-start lg:w-1/2">
             <Image
               src={Logo}
-              className="w-full lg:h-full rounded-br-5xl rounded-bl-5xl lg:rounded-bl-full lg:rounded-tl-full"
+              className="w-full lg:h-full rounded-br-4xl rounded-bl-4xl lg:rounded-bl-full lg:rounded-tl-full"
               alt="homepage"
             />
           </article>
         </section>
-        <section className="w-screen flex flex-row p-10">
-          <article className="w-1/2 flex flex-col p-10 gap-5">
+        <section className="w-screen flex flex-col-reverse items-center lg:items-start lg:flex-row lg:p-10">
+          <article className="lg:w-1/2 flex flex-col p-5 lg:p-10 gap-5">
             <div className="text-5xl font-extrabold">
               Sobat Kos adalah start up mantap
             </div>
@@ -71,11 +71,11 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section className="p-20 flex flex-col gap-20 ">
-          <article className="text-center text-5xl px-20">
+        <section className="lg:p-20 flex flex-col gap-20 ">
+          <article className="text-center text-5xl lg:px-20">
             Bagaimana Kami Membantu Mengembangkan Bisnis Kos Anda?
           </article>
-          <article className="flex flex-row items-center gap-10">
+          <article className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex flex-col items-center gap-5">
               <Image src={Logo} alt="content-image-3" />
               <div className="text-center">
@@ -99,17 +99,17 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section className="flex flex-row bg-pink-900 p-10 text-white">
-          <article className="w-1/2 p-10 flex flex-col gap-10">
-            <div>
+        <section className="flex flex-col relative lg:flex-row bg-pink-900 p-10 pb-28 text-white">
+          <article className="lg:w-1/2 lg:p-10 flex flex-col gap-10">
+            <div className="m-auto lg:m-0">
               <Image src={Logo} className="h-10" alt="content-logo-2" />
             </div>
-            <div className="text-5xl font-extrabold">
+            <div className="text-center lg:text-start pb-5 lg:pb-0 text-3xl lg:text-5xl font-extrabold">
               Solusi mendapatkan pendapatan baru
             </div>
-            <div className="flex flex-row items-center gap-7">
+            <div className="flex flex-row absolute bottom-5 right-1/4 lg:bottom-0 lg:right-0 lg:relative items-center gap-7">
               <button
-                className="text-black text-3xl bg-white w-14 h-14 rounded-full"
+                className="text-black text-3xl bg-white w-12 h-12 rounded-full"
                 onClick={() => {
                   section === 1 ? setSection(3) : setSection(section - 1);
                 }}
@@ -144,9 +144,9 @@ export default function Home() {
             </div>
           </article>
           <article
-            className={`w-1/2 p-10 ${
+            className={`lg:w-1/2 lg:p-10 ${
               section === 1 ? "flex" : "hidden"
-            } flex-col gap-10`}
+            } flex-col gap-5 lg:gap-10`}
           >
             <div className="flex flex-col gap-3">
               <p className="font-bold text-xl">Kamar Rasa 1</p>
@@ -171,9 +171,9 @@ export default function Home() {
             </div>
           </article>
           <article
-            className={`w-1/2 p-10 ${
+            className={`lg:w-1/2 lg:p-10 ${
               section === 2 ? "flex" : "hidden"
-            } flex-col gap-10`}
+            } flex-col  gap-5 lg:gap-10`}
           >
             <div className="flex flex-col gap-3">
               <p className="font-bold text-xl">Kamar Rasa 2</p>
@@ -198,9 +198,9 @@ export default function Home() {
             </div>
           </article>
           <article
-            className={`w-1/2 p-10 ${
+            className={`lg:w-1/2 lg:p-10 ${
               section === 3 ? "flex" : "hidden"
-            } flex-col gap-10`}
+            } flex-col gap-5 lg:gap-10`}
           >
             <div className="flex flex-col gap-3">
               <p className="font-bold text-xl">Kamar Rasa 3</p>
@@ -225,12 +225,12 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section className="flex flex-row bg-purple-900 p-10 text-white">
-          <article className="w-1/2 p-10 flex flex-col gap-10">
+        <section className="flex flex-col relative lg:flex-row bg-purple-900 p-10 text-white">
+          <article className="lg:w-1/2 lg:p-10 flex flex-col gap-10">
             <div className="text-5xl font-extrabold">Kata pemilik kost</div>
-            <div className="flex flex-row items-center gap-7">
+            <div className="flex flex-row absolute bottom-3 pb-1 right-1/4 lg:static items-center gap-7">
               <button
-                className="text-black text-3xl bg-white w-14 h-14 rounded-full"
+                className="text-black text-3xl bg-white w-12 h-12 rounded-full"
                 onClick={() => {
                   quote === 1 ? setQuote(3) : setQuote(quote - 1);
                 }}
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
           </article>
           <article
-            className={`w-1/2 p-10 ${
+            className={`pb-10 lg:w-1/2 lg:p-10 ${
               quote === 1 ? "flex" : "hidden"
             } flex-col gap-10`}
           >
@@ -277,7 +277,7 @@ export default function Home() {
                 sini, karena saya tidak perlu repot untuk menghandle kost saya”.
               </p>
               <div>
-                <p className="font-extrabold">Erni</p>
+                <p className="font-extrabold">Erni 1</p>
                 <p>
                   Pemilik Kost Singgahsini Wisma KS23 Setiabudi Jakarta Selatan
                 </p>
@@ -285,7 +285,7 @@ export default function Home() {
             </div>
           </article>
           <article
-            className={`w-1/2 p-10 ${
+            className={`pb-10 lg:w-1/2 lg:p-10 ${
               quote === 2 ? "flex" : "hidden"
             } flex-col gap-10`}
           >
@@ -297,7 +297,7 @@ export default function Home() {
                 sini, karena saya tidak perlu repot untuk menghandle kost saya”.
               </p>
               <div>
-                <p className="font-extrabold">Erni</p>
+                <p className="font-extrabold">Erni 2</p>
                 <p>
                   Pemilik Kost Singgahsini Wisma KS23 Setiabudi Jakarta Selatan
                 </p>
@@ -305,7 +305,7 @@ export default function Home() {
             </div>
           </article>
           <article
-            className={`w-1/2 p-10 ${
+            className={`pb-10 lg:w-1/2 lg:p-10 ${
               quote === 3 ? "flex" : "hidden"
             } flex-col gap-10`}
           >
@@ -317,7 +317,7 @@ export default function Home() {
                 sini, karena saya tidak perlu repot untuk menghandle kost saya”.
               </p>
               <div>
-                <p className="font-extrabold">Erni</p>
+                <p className="font-extrabold">Erni 3</p>
                 <p>
                   Pemilik Kost Singgahsini Wisma KS23 Setiabudi Jakarta Selatan
                 </p>
