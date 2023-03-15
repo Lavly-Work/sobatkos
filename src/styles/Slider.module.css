@@ -16,7 +16,7 @@
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
+  /* user-drag: none; */
 }
 
 .slider img.active {
@@ -25,7 +25,7 @@
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
+  /* user-drag: none; */
 }
 
 .image {
@@ -34,5 +34,5 @@
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
+  /* user-drag: none; */
 }
