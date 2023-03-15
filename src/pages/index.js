@@ -29,10 +29,10 @@ export default function Home() {
       </Head>
       <Header />
       <main className="pt-20 bg-white">
-        <section className="flex flex-col-reverse lg:flex-row w-screen bg-blue-400">
+        <section className="flex flex-col-reverse lg:flex-row w-screen bg-blue-200 md:mb-10">
           <article className="flex flex-col items-center w-screen p-5 lg:p-20 lg:items-start lg:w-1/2 text-white gap-3">
-            <Image src={Logo} className="lg:h-20 lg:w-auto" alt="logo2" />
-            <div className="text-center lg:text-start font-extrabold text-5xl">
+            <Image src={Logo} className="md:h-20 md:w-auto" alt="logo2" />
+            <div className="text-center lg:text-start font-extrabold text-5xl ">
               Archico, Sahabat Arsitek dan Konstruksimu
             </div>
             <div className="text-center lg:text-start text-xl">
@@ -49,7 +49,7 @@ export default function Home() {
             <Slider />
           </article>
         </section>
-        <section className="lg:p-20 flex flex-col gap-20 ">
+        <section id="Tentang Kami" className="lg:p-20 flex flex-col gap-20 ">
           <article className="text-center text-5xl lg:px-20">
             Archico menyediakan 3 jasa utama yaitu :
           </article>
@@ -98,7 +98,10 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section className="w-screen flex flex-col-reverse items-center lg:items-start lg:flex-row lg:p-10">
+        <section
+          id="Portofolio"
+          className="w-screen flex flex-col-reverse items-center lg:items-start lg:flex-row lg:p-10"
+        >
           <article className="lg:w-1/2 flex flex-col p-5 lg:p-10 gap-5">
             <div className="text-5xl font-extrabold">
               Archico berpengalaman lebih dari 1 tahun dengan portofolio projek

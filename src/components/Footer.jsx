@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   // const router = useRouter();
   return (
-    <footer className="bg-blue-400 text-white">
+    <footer id="Kontak" className="bg-blue-200 ">
       <section className="flex flex-col items-center text-center md:items-start md:text-start md:flex-row md:px-20 py-10 gap-10 md:gap-0">
         <section className="md:w-3/12 lg:w-4/12">
           <div className="flex justify-center w-52 items-center">
