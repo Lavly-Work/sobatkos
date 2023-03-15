@@ -1,17 +1,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "@/assets/images/download.jpg";
+import Logo from "@/assets/logo/logo-archico.png";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const [dropdown, setDropdown] = useState(false);
+  const router = useRouter();
+  const headerList = ["Tentang Kami", "Portofolio", "Kontak"];
   return (
     <header className="flex flex-row items-center justify-between w-screen z-10 bg-white px-10 py-5 fixed">
       <div>
-        <Image
-          src={Logo}
-          className="w-10 h-auto md:ml-5 rounded-full"
-          alt="logo"
-        />
+        <Image src={Logo} className="w-16 h-auto md:ml-5" alt="logo" />
       </div>
       <div
         className={`${
@@ -20,11 +19,25 @@ export default function Header() {
             : "hidden"
         } md:flex md:flex-row md:gap-10`}
       >
-        <div>Tentang Kami</div>
-        <div>Manfaat</div>
-        <div>Tanya Jawab</div>
+        {headerList.map((item, idx) => {
+          return (
+            <>
+              <div
+                className="cursor-pointer"
+                key={idx}
+                onClick={() => {
+                  router.push(`#${headerList[idx]}`);
+                  console.log(headerList[idx]);
+                }}
+              >
+                {item}
+              </div>
+            </>
+          );
+        })}
+        <button>Login</button>
         <button className="py-5 mx-16 mt-28 bg-red-700 rounded-xl md:hidden">
-          Daftar Sekarang
+          Login
         </button>
       </div>
       <div

@@ -1,32 +1,41 @@
-import { useRouter } from "next/router";
 import React from "react";
+import Logo from "@/assets/logo/logo-archico.png";
+import Image from "next/image";
 
 export default function Footer() {
   // const router = useRouter();
   return (
-    <footer className="bg-indigo-900 text-white">
+    <footer className="bg-blue-400 text-white">
       <section className="flex flex-col items-center text-center md:items-start md:text-start md:flex-row md:px-20 py-10 gap-10 md:gap-0">
-        <section className="md:w-3/12 lg:w-4/12">Sobat Kos</section>
+        <section className="md:w-3/12 lg:w-4/12">
+          <div className="flex justify-center w-52 items-center">
+            <Image alt="logo" src={Logo} className="p-10" />
+          </div>
+        </section>
         <section className="md:w-3/12 lg:w-2/12 flex flex-col md:gap-7">
           <div className="hidden text-xl md:flex">Sobat Kos</div>
           <div className="flex flex-row md:flex-col gap-2 md:gap-4">
             <div>Tentang Kami</div>
             <div className="md:hidden">|</div>
-            <div>Manfaat</div>
+            <div>Portofolio</div>
             <div className="md:hidden">|</div>
-            <div>Tanya Jawab</div>
+            <div>Kontak</div>
           </div>
         </section>
         <section className="md:w-4/12 lg:w-3/12 flex flex-col gap-7">
           <div className="hidden md:flex text-xl">Hubungi Kami</div>
           <div className="flex flex-col gap-4">
             <div>
-              <div>Jabodetabek dan Bandung</div>
-              <div>+6282246817775 - Tania</div>
+              <div>Whatsapp: </div>
+              <div>+62895-3721-30662</div>
             </div>
             <div>
-              <div>Jabodetabek dan Bandung</div>
-              <div>+6282246817775 - Tania</div>
+              <div>Email: </div>
+              <div>archico.indonesia@gmail.com</div>
+            </div>
+            <div>
+              <div>Alamat: </div>
+              <div>Gang Petir 3, Kel. Jebres, Kec. Kota Surakarta</div>
             </div>
           </div>
         </section>
@@ -48,16 +57,16 @@ export default function Footer() {
             <div
               className="cursor-pointer "
               onClick={() => {
-                window.open("https://www.instagram.com/sobatkos.id/", "_blank");
+                window.open("https://www.instagram.com/archico.id/", "_blank");
               }}
             >
-              sobatkos.id
+              archico.id
             </div>
           </div>
         </section>
       </section>
       <section className="flex justify-center md:justify-end md:px-20 pb-10 md:py-10">
-        © 2023 Sobatkos.com. All rights reserved
+        © 2023 Archico.info. All rights reserved
       </section>
     </footer>
   );
