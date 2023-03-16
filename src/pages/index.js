@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import Header from "@/components/Header";
 import Logo from "@/assets/logo/logo-archico.png";
+import Blank from "src/assets/images/hqdefault.jpg";
 import Architect from "src/assets/arsitek/e-1.jpg";
 import Interior from "src/assets/interior/i-19.jpg";
 import Construction from "src/assets/arsitek/e-2.jpg";
@@ -111,7 +111,7 @@ export default function Home() {
         </section>
         <section
           id="Portofolio"
-          className="w-screen flex flex-col items-center lg:items-start lg:flex-row pb-96 px-10 pt-10 mb-20"
+          className="w-screen flex flex-col items-center lg:items-start lg:flex-row px-10 pt-10 pb-72 md:pb-0 lg:pb-20"
         >
           <article className="lg:w-1/2 flex flex-col lg:p-10 gap-5">
             <div className="text-center lg:text-start text-3xl md:text-5xl font-extrabold">
@@ -122,11 +122,24 @@ export default function Home() {
           </article>
           <article className="lg:w-1/2 flex flex-col lg:p-10">
             <div>
-              <SliderConstruction className="w-full" />
-              <Image src={Logo} className="lg:w-full" alt="content-image-2" />
+              <SliderConstruction />
+            </div>
+            <div>
+              <Image src={Blank} className="lg:hidden" alt="content-image-2" />
+            </div>
+            <div>
+              <Image
+                src={Logo}
+                className="hidden lg:w-full lg:flex"
+                alt="content-image-2"
+              />
             </div>
             <div className="flex mt-5 justify-center">
-              {/* <Image src={Logo} className="w-1/2" alt="content-image-2" /> */}
+              <Image
+                src={Logo}
+                className="hidden w-1/2 lg:flex"
+                alt="content-image-2"
+              />
             </div>
           </article>
         </section>

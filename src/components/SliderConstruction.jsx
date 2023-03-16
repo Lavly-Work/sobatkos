@@ -58,7 +58,7 @@ export default function ImageSlider() {
     };
   }, [activeIndex]);
   return (
-    <div className={styles.slider}>
+    <div className={`${styles.slider}`}>
       {images.map((image, index) => (
         <Image
           key={index}

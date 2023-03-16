@@ -6,10 +6,10 @@ export default function Footer() {
   // const router = useRouter();
   return (
     <footer id="Kontak" className="bg-blue-200 ">
-      <section className="flex flex-col items-center text-center md:items-start md:text-start md:flex-row md:px-20 py-10 gap-10 md:gap-0">
+      <section className="flex flex-col items-center text-center md:items-start md:text-start md:flex-row lg:px-20 py-10 gap-10 md:gap-0">
         <section className="md:w-3/12 lg:w-4/12">
-          <div className="flex justify-center w-52 items-center">
-            <Image alt="logo" src={Logo} className="p-10" />
+          <div className="flex lg:justify-center lg:w-52 lg:items-center">
+            <Image alt="logo" src={Logo} className="md:p-10 w-20" />
           </div>
         </section>
         <section className="md:w-3/12 lg:w-2/12 flex flex-col md:gap-7">
