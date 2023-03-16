@@ -45,7 +45,7 @@ export default function Home() {
             <button
               onClick={() => {
                 router.push(
-                  "https://api.whatsapp.com/send?phone=6285225514983"
+                  "https://api.whatsapp.com/send?phone=62895372130662"
                 );
               }}
               className="bg-orange-600 p-5 rounded-md text-lg"
