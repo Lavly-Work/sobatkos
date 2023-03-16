@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const [dropdown, setDropdown] = useState(false);
+  console.log(dropdown);
   const router = useRouter();
   const headerList = ["Tentang Kami", "Portofolio", "Kontak"];
   return (
@@ -27,7 +28,6 @@ export default function Header() {
                 key={idx}
                 onClick={() => {
                   router.push(`#${headerList[idx]}`);
-                  console.log(headerList[idx]);
                 }}
               >
                 {item}

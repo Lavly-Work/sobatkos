@@ -57,11 +57,6 @@ export default function ImageSlider() {
     setActiveIndex(activeIndex === images.length - 1 ? 0 : activeIndex + 1);
   };
 
-  const previousSlide = () => {
-    clearInterval(intervalId);
-    setActiveIndex(activeIndex === 0 ? images.length - 1 : activeIndex - 1);
-  };
-
   useEffect(() => {
     const id = setInterval(() => {
       nextSlide();

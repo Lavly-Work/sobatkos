@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import styles from "src/styles/SliderInterior.module.css";
+import styles from "src/styles/SliderContruction.module.css";
 import image1 from "src/assets/arsitek/e-1.jpg";
 import image2 from "src/assets/arsitek/e-1A.jpg";
 import image3 from "src/assets/arsitek/e-2.jpg";
