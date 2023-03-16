@@ -126,7 +126,7 @@ export default function Home() {
               <Image src={Logo} className="lg:w-full" alt="content-image-2" />
             </div>
             <div className="flex mt-5 justify-center">
-              <Image src={Logo} className="w-1/2" alt="content-image-2" />
+              {/* <Image src={Logo} className="w-1/2" alt="content-image-2" /> */}
             </div>
           </article>
         </section>
