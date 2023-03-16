@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const [dropdown, setDropdown] = useState(false);
-  console.log(dropdown);
   const router = useRouter();
   const headerList = ["Tentang Kami", "Portofolio", "Kontak"];
   return (
@@ -22,17 +21,15 @@ export default function Header() {
       >
         {headerList.map((item, idx) => {
           return (
-            <>
-              <div
-                className="cursor-pointer"
-                key={idx}
-                onClick={() => {
-                  router.push(`#${headerList[idx]}`);
-                }}
-              >
-                {item}
-              </div>
-            </>
+            <div
+              className="cursor-pointer"
+              key={item}
+              onClick={() => {
+                router.push(`#${headerList[idx]}`);
+              }}
+            >
+              {item}
+            </div>
           );
         })}
         <button>Login</button>
