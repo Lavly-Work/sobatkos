@@ -12,8 +12,10 @@ import Slider from "src/components/Slider";
 import SliderInterior from "src/components/SliderInterior";
 import SliderConstruction from "src/components/SliderConstruction";
 import styles from "src/styles/Slider.module.css";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   const [section, setSection] = useState(1);
   const [quote, setQuote] = useState(1);
   const [shown1, setShown1] = useState(false);
@@ -40,7 +42,14 @@ export default function Home() {
               melalui Archico. Kami mengutamakan kepercayaan dan kepuasan
               pelanggan di atas segalanya.
             </div>
-            <button className="bg-orange-600 p-5 rounded-md text-lg">
+            <button
+              onClick={() => {
+                router.push(
+                  "https://api.whatsapp.com/send?phone=6285225514983"
+                );
+              }}
+              className="bg-orange-600 p-5 rounded-md text-lg"
+            >
               Pesan Sekarang
             </button>
           </article>
